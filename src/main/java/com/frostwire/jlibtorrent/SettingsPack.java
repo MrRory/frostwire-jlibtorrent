@@ -202,7 +202,8 @@ public final class SettingsPack {
     }
 
     /**
-     * {@code active_checking} is the limit of number of simultaneous checking
+     * {@code 
+     } is the limit of number of simultaneous checking
      * torrents.
      *
      * @return
@@ -238,7 +239,7 @@ public final class SettingsPack {
      * @see #activeDhtLimit()
      */
     public SettingsPack activeDhtLimit(int value) {
-        sp.set_int(settings_pack.int_types.active_checking.swigValue(), value);
+        sp.set_int(settings_pack.int_types.active_dht_limit.swigValue(), value);
         return this;
     }
 
